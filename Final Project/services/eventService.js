@@ -25,7 +25,10 @@ const getEventAttendees = (id) => {
 
 exports.getEvent = (id) => {
   const eventData = eventDataStore.get(id);
-  eventData[0].memberAttendance = getEventAttendees(id);
+  
+  if (!!eventData.length) {
+    eventData[0].memberAttendance = getEventAttendees(id);
+  }
 
   return eventData;
 };
@@ -56,6 +59,16 @@ exports.deleteEvent = (id) => {
   console.log(chalk.greenBright(`Event successfully deleted`));
 };
 
-// exports.exportEvent = (id) => {
+exports.exportEvent = (id) => {
+  const eventData = eventDataStore.get(id);
+  const memberAttendance = getEventAttendees(id)
+    .sort( (a, b ) => {
+      // const aDate = Date.parse(a.timeIn);
+      // const bDate = Date.parse(b.timeIn);
+      return a.timeIn > b.timeIn ? 1 
+              : a.timeIn < b.timeIn ? -1 
+              : 0
+    });
 
-// }
+  console.log(memberAttendance);
+}

@@ -29,7 +29,10 @@ getEventAttendance = (memberId) => {
 
 exports.getMember = (id) => {
   const memberData = memberDataStore.get(id);
-  memberData[0].eventAttendance = getEventAttendance(id);
+  
+  if (!!memberData.length) {
+    memberData[0].eventAttendance = getEventAttendance(id);
+  }
 
   return memberData;
 };
