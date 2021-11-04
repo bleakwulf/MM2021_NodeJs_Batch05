@@ -1,0 +1,97 @@
+{
+  "events": [
+    {
+      "id": "0ae12576-e195-407f-8b04-f5d04df84d46",
+      "eventName": "Test Event 001",
+      "eventType": "Test Event Type I",
+      "startDate": "2021-12-11T00:00:00.000Z",
+      "endDate": "2021-12-13T00:00:00.000Z"
+    },
+    {
+      "id": "5ab30659-6c84-4f5b-946b-451e988efc82",
+      "eventName": "DevTest Event 02",
+      "eventType": "DevTest Event Type I",
+      "startDate": "2021-12-06T00:00:00Z",
+      "endDate": "2021-12-07T07:00:00.000Z"
+    },
+    {
+      "id": "76121891-3ea8-4d4b-9bfd-b4bcadd8514b",
+      "eventName": "DevTest Event 003A",
+      "eventType": "DevTest Event Type III-A",
+      "startDate": "2021-12-06T00:00:00",
+      "endDate": "2021-12-07T00:00:00.000Z"
+    },
+    {
+      "id": "9d6f0532-cf65-415d-92f9-025cc974698f",
+      "eventName": "DevTest Event 003B",
+      "eventType": "DevTest Event Type III-B",
+      "startDate": "2021-12-06T00:00:00",
+      "endDate": "2021-12-07T00:00:00.000Z"
+    }
+  ],
+  "attendances": [
+    {
+      "id": "050bd666-289e-48ab-a381-dedcbef988e7",
+      "eventId": "76121891-3ea8-4d4b-9bfd-b4bcadd8514b",
+      "memberId": "32f1f301-23bd-494f-be66-742be7a1c70a",
+      "timeIn": "2021-11-01T16:30:00",
+      "timeOut": "2021-11-01T16:45:00"
+    },
+    {
+      "id": "810420e0-307a-4379-bb97-78d9445d2dfe",
+      "eventId": "0ae12576-e195-407f-8b04-f5d04df84d46",
+      "memberId": "8d1b8653-6e17-4c48-a184-d708124b30e9",
+      "timeIn": "2021-11-01T19:15:00",
+      "timeOut": ""
+    },
+    {
+      "id": "750b5d99-1a25-4e66-83b1-6219b1146d97",
+      "eventId": "5ab30659-6c84-4f5b-946b-451e988efc82",
+      "memberId": "8d1b8653-6e17-4c48-a184-d708124b30e9",
+      "timeIn": "2021-12-06T08:00:00",
+      "timeOut": ""
+    },
+    {
+      "id": "697699ca-39a4-4659-9619-426f250c1611",
+      "eventId": "76121891-3ea8-4d4b-9bfd-b4bcadd8514b",
+      "memberId": "ff224bf4-87e7-424f-b4a6-3647f4624326",
+      "timeIn": "2021-11-01T16:30:00",
+      "timeOut": "2021-11-01T16:45:00"
+    }
+  ],
+  "members": [
+    {
+      "id": "ff224bf4-87e7-424f-b4a6-3647f4624326",
+      "name": "John Doe",
+      "status": "Active"
+    },
+    {
+      "id": "8d1b8653-6e17-4c48-a184-d708124b30e9",
+      "name": "Ewan Doe",
+      "status": "Active",
+      "joinedDate": "2021-11-01T00:00:00"
+    },
+    {
+      "id": "7f124033-055d-4555-b59e-62020461085c",
+      "name": "Jane Doe",
+      "status": "Active"
+    },
+    {
+      "id": "79915193-3596-4f17-8e31-c4eb2231f5ef",
+      "name": "Ivan Doe",
+      "status": "Active",
+      "joinedDate": "2021-11-01T00:00:00"
+    },
+    {
+      "id": "edfefad7-0c34-4e34-90dd-04400b9b6fae",
+      "name": "Juan Doe",
+      "status": "Active"
+    },
+    {
+      "id": "32f1f301-23bd-494f-be66-742be7a1c70a",
+      "name": "Jann Doe",
+      "status": "In-active",
+      "joinedDate": "2021-11-01T00:00:00"
+    }
+  ]
+}
